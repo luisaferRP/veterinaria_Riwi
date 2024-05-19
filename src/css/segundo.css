@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.flecha,.flecha1{
+    width: 50%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: aquamarine;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.flecha1{
+    margin-top: 20px;
+
+}
+
+@keyframes lineaGradie {
+    0%{
+        background-color: rgb(226, 43, 211);
+    }
+    30%{
+        background-color: rgb(42, 65, 165);
+    }
+    60%{
+        background-color: rgb(113, 43, 226);
+    }
+    100%{
+        background-color: rgb(35, 97, 189);
+    }
+    
+}
+.circulo{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+ /* llamar mi animacion  */
+    /*  animation: ; */
+    animation-name: changeColor;
+/*     propiedad para iniciar una animacion */
+    animation-duration: 5s;
+ /*    que se me repita muchas veces */
+    animation-iteration-count: infinite;
+   /*  darle el orden a la animacion de que vaya rapido,lento,como queramos */
+   animation-timing-function: ease-in-out;
+}
+
+/* animaciones */
+/* estructura logica que me ayuda a realizar animaciones */
+@keyframes changeColor {
+    0%{
+        background-color: rgb(0, 0, 0);
+    }50%{
+        background-color: rgb(113, 43, 226);
+    }
+    100%{
+        background-color: rgb(226, 43, 211);
+    }
+    
+}
+
+.circulo2{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+    /*  */
+    animation: 2s 2s changePosition infinite;
+
+}
+
+@keyframes changePosition {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(100%);
+        background-color: coral;
+    }
+    50%{
+    /*     primer valor eje x segundo valor eje y */
+        transform: translate(100%,100%);
+        background-color: rgb(42, 65, 165);
+    }
+    75%{
+        background-color: black;
+        transform: translate(0%,100%);
+    }
+    
+}

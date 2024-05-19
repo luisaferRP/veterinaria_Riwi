@@ -1,0 +1,266 @@
+:root{
+    --verde-fondo: #00d19c;
+    --negro:#000000;
+    --negro--back:#00000052;
+    --azul--fondo:#4267E1;
+    --verde-suave: #77c9a9;
+    --fondo--div:#65c5abe2;
+    --sombra--div:#068583;
+    --verde-claro:#47a641;
+    --verde-medio:#47a641;
+    --verde-oscuro:#368831;
+    --fondo-card:#c9ecc6;
+}
+
+/* Estilo para el ícono cuando el tema es claro */
+.light-theme #icon {
+    color: black; /* Cambiar el color del ícono cuando el tema es claro */
+}
+
+/* Estilo para el ícono cuando el tema es oscuro */
+.dark-theme #icon {
+    color: white; /* Cambiar el color del ícono cuando el tema es oscuro */
+}
+
+
+*{
+    list-style: none;
+    font-family: "Sedan", serif;
+}
+
+header{
+    backdrop-filter: blur(10px);
+}
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+/* div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+#lista__mascotas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .div__principal{
+    width: 50%;
+    box-shadow:-11px -2px 15px 15px var(--negro--back);
+    padding: 15px;
+    background-color: var(--fondo--div);
+    box-shadow: 0px 0px 37px var(--sombra--div);
+    border-radius: 10px;
+} */
+
+#div__menu h2,ul{
+    width: 100%;
+    text-align: center;
+}
+
+#input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#boton-seleccionar {
+    background-color: var(--sombra--div);
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: absolute;
+    right: 457px;
+}
+
+#menu-options li {
+    margin-bottom: 10px;
+}
+
+input[type="number"]{
+    border: none;
+    border-bottom: 3px solid var(--sombra--div);
+    border-radius: 3px;
+    padding: 3px;
+    width: 20%;
+    transition: 1s;
+}
+
+/* Estilos para el input de tipo número cuando está activo */
+input[type="number"]:focus {
+    border: none;
+    outline: none; 
+    border-bottom: 3px solid var(--azul--fondo);
+}
+
+/* registro mascota */
+.registro label{
+    width: 100%;
+}
+.registro input{
+    width: 70%;
+}
+
+/* card de mascotas de boostrap------------------------------------ */
+.card{
+    filter: drop-shadow(0 0 10px #a6d8a1);
+}
+
+/* hover ya que boostrap no tiene hover */
+img:hover{
+    filter: drop-shadow(0 0 8px var(--verde-oscuro));
+}
+.card:hover{
+    box-shadow:0 0 10px var(--fondo--div);
+}
+
+
+.bg-dark{
+    /* border-bottom:2px solid var(--verde-oscuro); */
+    color: rgb(255, 255, 255);
+
+    & nav a{
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/* section inicialll----------------------------------------------------------- */
+
+#carouselExample img {
+    width: 100%;
+    height: 600px;
+}
+
+
+/* regustrar */
+.register{
+    height: 600px;
+
+}
+
+
+
+/* FORMULARIOS REGISTRAR Y ACTUALIZAR--------------------------------------------------------------------------------------*/
+.form-box {
+    max-width: 385px;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+}
+
+/*Form text*/
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+/*Inputs box*/
+.form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+}
+
+.input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid var(--verde-claro);
+    font-size: .9rem;
+    padding: 8px 15px;
+}
+
+.form-section {
+    padding: 16px;
+    font-size: .85rem;
+    background-color: #e0ecfb;
+    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+    font-weight: bold;
+    color: #0066ff;
+    transition: color .3s ease;
+}
+
+.form-section a:hover {
+    color: #005ce6;
+    text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+    color: #fff;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.form button:hover {
+    box-shadow: 0 0 10px var(--verde-claro);
+}
+
+
+/* butooon----------- */
+.button {
+    width: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--verde-claro);
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+
+    & .btn-txt {
+      z-index: 1;
+      font-weight: 500;
+      letter-spacing: 4px;
+    }
+  }
+  
+.button:hover {
+    box-shadow: 0px 0px 10px var(--verde-oscuro);
+}
